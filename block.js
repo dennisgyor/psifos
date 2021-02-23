@@ -17,6 +17,13 @@ class Block {
         //This is a static method to generate the genesis block
         return new this('Genesis Block', '----------', 'Origin Block', []);
     }
+    static mineBlock(lastBlock, data) {
+        const timestamp = Date.now();
+        const lastHash = lastBlock.hash;
+        const hash = 'TODO-hash';
+
+        return new this(timestamp, lastHash, hash, data);
+    }
 }
 //export the module to be available for use in the project
 module.exports = Block;
