@@ -17,7 +17,7 @@ class Block {
             Data       : ${this.data}`;
     }
     static genesis() {
-        //This is a static method to generate the genesis block
+        //This is a static method to generate the genesis "dummy" block
         return new this('Genesis Block', '----------', 'Origin Block', []);
     }
     static mineBlock(lastBlock, data) {
